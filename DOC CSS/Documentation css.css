@@ -1,0 +1,366 @@
+/*
+un sélecteur est un élément css qui nous permet de selectionner ou cibler, un ou plusieurs un élément afin de lui appliquer un style particulier
+
+Font : 
+
+    font-size : permet de rédimensionner la taille d'une police
+    font-weight : style de police
+    font-weight : poids du texte
+    font-style : definit le style d'un texte
+    font-familly : permet de changer la police d'un texte
+    
+
+Les selecteurs :
+
+    class : 
+
+        permet de manipuler les élements, via css ou javascript en utilisant les sélecteurs de classe ou des fonctions telles que document(.)
+
+    id : 
+
+        permet d'idetifier un élément lorsqu'on crée un lien, avec un fragment et qu'on souhaite le manipuler avec un script ou qu'on le met en forme avec css (#) 
+
+Les textes :
+
+    opacity : 
+    
+        permet de régler l'opacité d'un élement
+    
+    text-align : 
+
+        permet d'aligner un élément à différent endroid de la page : 
+
+            center : au centre
+            left : à gauche
+            right : à droite
+            bottom : en bas
+
+    text-transform : 
+
+        permet de transformer un texte soit en majuscule soit en miniscule
+
+            lowercase : va mettre le texte en minsicule
+            uppercase : va mettre le texte en majuscule
+            capitalize : va mettre la première lettre de chaque mot en majuscule 
+            indiared : hériter de la valeur de l'élément parent
+            none : non transformation du texte. 
+
+    text-decoration : 
+        
+        permet d'ajouter ou retirer des décorations à nos textes: 
+
+            underline : soulier le texte
+            overline : rajouter une ligne au-dessus du texte
+            line-through : barrer le texte 
+            indiared : hériter de l'élément parent
+            initial : utiliser la propriété initiale 
+            none : aucune décoration 
+
+    text-indent : 
+    
+        permet de gérer l'indentation d'un texte (peut être utiliser en pixel): 
+    
+    text-shadow : 
+    
+        permet de créer des ombres autours de nos textes afin que ceux-ci se détache de notre fond:
+
+            projection :
+
+                horizontal en pixel
+                vertical en pixel
+                radius (rayon de propagation de l'ombre) en pixel
+                coulor : en couleur 
+
+Gérer les espaces :
+
+    line-height : permet de gérer l'espace entre la hauteur des textes 
+    letter-spacing : permet de gérer l'espace entre les lettres  
+    word-spacing : permet de gérer l'espace entre les mots
+    gap : gère les espaces entre les éléments 
+
+Les boites : 
+
+    width : permet de gérer une largeur pour l'élement
+    padding : permet de gérer une marge interieure pour l'élément
+    border : permet de gérer les bordures
+    margin : permet de gérer la marge extérieure
+    ILLUSTRATION VISUELLE :
+    Partie HTML 
+        [ <body>
+        <div class="div1">
+            <h1>Le modèle des boites</h1>
+            <p class="para-one">bienvenue chez nous</p>
+            <p class="para-two">boite de truc</p>
+        </div> ]
+    Partie CSS 
+        .div1{
+        background-color: #088;
+        width: 500px;
+        padding: 20px;
+        border: 20px solid #0C0;
+        padding: 50px;
+        ________________________
+}
+Largeur et Hauteur : 
+
+    height : permet de modifier la hauteur d'un élément
+    width : permet de modifier la largeur d'un élément
+
+Les bordures en css : 
+
+    Border ( TOP, Bottom, Left, Rigt ): 
+        Epaiseur de la bordure en pixel
+        Style de la bordure ( style ):
+            une bordure peut avoir 8 styles différents :
+                Solid  (Normal)
+                Dotted (Bordure en point pliés)
+                Dashed (Bordure en tiret)
+                Double (Bordure double)
+                Groove (bordure 3D)
+                Ridge : (Bordure en 3d)
+                Inset : (Bordure ne point arrondis)
+                Outset : 
+        Couleur de la bordure ( color )
+        L'arrondi de la bordure ( radius ) : 
+            border-radius
+            border-top-right-radius
+            border-bottom-right-radius
+
+Les marges (top bottom left right):
+
+    padding : marge interieur 
+    margin : marge exterieur 
+
+Les ombres des boites :
+
+    deplacement horizontal, deplacement vertical, rayon de propagation de l'ombre, couleyr de l'ombre
+
+Les propriétés display : 
+
+    inline : sont mis dans les éléments block 
+    block : les élémenst block sont mis sur une seule ligne
+    inline-block
+    none
+
+Propriété posistion : 
+
+    static : valeur par défaut
+    relative : déplacer avec une valeur en pixel ( letf, right, bottom, Top ) 
+    fixed : valeur qui permet à un élément de rester à à la même place
+    absolute : permet de positionner un élément de façon relatif par rapport à son parent le plus proche possé dans un parent le plus proche
+
+Z-index : 
+
+    sert à gérer l'ordre d'empilement d'éléments qui se chevauchent càd quel élément doit apparaitre au-dessus ou au-dessous d'un autre ( il ne marche que sur des éléments positionnés ). Plus la valeur est élevée plus l'élément sera au-dessus de l'autre 
+
+Propriétés float : 
+
+    permet de faire flotter un élément html à gauche ou à droite. On va généralement utiliser cette élément avec la proiété left pour faire flotter à gauche et right pour le faire à droite : 
+
+        1. Les éléments suivant float vont se posistionner à côté de lui par défaut
+        2. Les  éléments posistionner avec la propriété position vont pouvoir ignorer la propriété float selon les valeurs données à la posistion
+        3. Un élément flottera toujours dans les rubriques de son élément parent contenu. 
+
+Propriétés clear : 
+
+    empêche un élément de venir se positionner à côté des éléments flottant :
+
+        left : neutralise un float left 
+        right : neutralise un float right 
+        box : neutralise left et right 
+
+propriétés overflow : 
+
+    permet de cacher ou pas la partie de l'élément flottant qui doit dépasser de son conteneur : 
+
+        visible : par défaut, rien ne sera cacher
+        hidden : ce qui dépasse sera couper
+        scroll : cache ce qui dépasse et qui va ajouter une barre de défilement afin de voir tout le contenu 
+        auto : laisse le navigateur choisir du meilleur choix
+    
+L'alignement en css : 
+
+    margin : 
+    float : 
+    position
+    gap : 
+
+La gestion des fonds : 
+
+    background-color : permet de changer la couleur de fond 
+
+Les images de fond : 
+
+    background-image : url( ) : permet de mettre le fond 
+    background-size : permet de modifier en pourcentage la taille 
+    background-repeat : 
+
+        repeat : repète l'image horizontalement et verticalement
+        repeat x : repèete la valeur horizontalement uniquement  
+        repeat y : repète la valeur verticalement uniquement 
+        no-repeat : va faire que l'image ne se repète pas 
+    
+    background-attachement : 
+
+        fixed : fixer l'image dans la page
+        scroll : fixe l'image et pertmet de défiler la page sans la revoir 
+
+    background-posisition ( généralement utiliser avec sa valeur repeat et no-repeat ):
+
+        la propriété background-position accepte plusieurs types de valeur : 
+
+            top, left,right, bottom 
+            mais aussi en pixel 
+    
+Les dégradés linéaires : 
+
+    background: -webkit-linear-gradient()
+    background: -o-linear-gradient()
+    background: -moz-element()
+    background: linear-gradient()
+
+Les dégrédés radiaux :
+
+    background: -webkit-radial-gradient();
+    background: -o-radial-gradient();
+    background: -moz-radial-gradient();
+    background: radial-gradient();
+
+Les images : 
+
+    cadres : 
+
+    pour créer un cadre, utikiser les élémenst html padding, border et box-shadow 
+
+Notations css Short hand et Long hand :
+
+    font: 
+
+        font-style
+        font-wheight
+        font-size
+        line-height
+        font-family
+
+    border : 
+
+        border top
+        border right
+        broder bottom
+        border left
+
+    padding : 
+
+        padding-top
+        padding-right
+        padding-bottom
+        padding-left
+
+    margin : 
+
+        margin-top
+        margin-right
+        margin-bottom
+        margin-left
+
+    background : 
+
+        background-color
+        background-image
+        background-repeat
+        background-attachement
+        background-poisition
+    
+    Transition : 
+
+        trasnsition-delay : indique quand commence la transition 
+        transition-duration : indique la durée de la transition 
+        transition-propriety ; qui définit la propriété à laquelle la transition doit s'appliquer
+        transition-timing fonction : définit la courbe de vitesse de la transition 
+
+Les selecteurs css avancés : 
+
+    Le selecteur étoile (*) : permet de sélectionner tous les élémenents html d'un seul coup dans la page afin d'y appliquer un style
+    Le selecteur cheffron fermant(>) : permet de sélectionner tous les éléments qui sont des enfants directs d'un autre élément
+
+    Les selecteurs d'attributs : 
+        élément[attribut] : permet de sélectionner des éléments possédant un attribut en particulier
+
+Les pseudo classes css : 
+
+    :link : permet de styliser un lien non visité
+    :visited : permet de styliser un lien une fois que celui-ci a été stylisé 
+    :hover : permet de changer l'aspct d(un élément lorsque un visisteur passera son curseur dessus
+    :active : permet de modifier l'aspect d'un lien lors d'un clique
+
+    NB: si bous utilisez plusieurs de ces pseudo classes sur un autre élément, prières de le faire dans l'ordre donné
+
+    :first-child : permet de sélectionner le premier élément enfant html d'un certain type par rapport à un élément parent
+    :last-child : permet de sélectionner le dernier élément enfant html d'un certain type par rapport à un élément parent
+    :nth:child : permet de cibler certains enfants d'un élément html en particulier
+
+Les pseudo éléments css : 
+
+    Permettent de modifier l'apparance d'un ou de plusieurs éléments html ou encore d'ajouter du contenu au début ou à la fin d'un élément html
+
+    ::first-letter : permet de sélectionner uniquement la première lettre  d'un texte contenu dans un élément
+    ::first-line : permet de sélectionner la première ligne d'un texte d'un élément
+    ::selection : permet de séléctionner la partie d'un élément déjà sélectionner par un utilisateur, soit par un double clique soit grâce à sa souris 
+    ::before : permet d'insérer du contenu au début d'un élément html
+    ::after : permet d'insérer du contenu en fin d'un élément html
+
+Les sprites d'images : 
+
+    C'est une collection d'image rassemblée en une seule grande image. L'idée dérrière spirtes et de reduire l'utilisation de l'esoace serveur 
+
+Les tranasitions en css : 
+
+    Transition : 
+
+        trasnsition-delay : indique quand commence la transition 
+        transition-duration : indique la durée de la transition 
+        transition-propriety ; qui définit la propriété à laquelle la transition doit s'appliquer
+        transition-timing fonction : définit la courbe de vitesse de la transition
+
+            valeur : 
+
+                ease : commence la transition lentement, puis accélère au milieu avant de finir lentement 
+
+    
+Les animations en css : 
+
+    animation-name : permet de nommer notre animation
+    animation-duration : durée de l'animation en seconde
+    animation-timing : courbe de vitesse de l'animation 
+    animation-delay : délai de l'animation 
+    animation-count : definit le nombre de fois que l'animation doit être jouer 
+    animation-duration : qui specifie si l'animation doit se jouer à l'envers ou dans des cycles alternés 
+
+    @keyframes nom définit par animation-name{
+    from{forme de départ;n}
+    to {forme d'arrivé;}
+
+Le responsives design :
+
+    Viewport :
+
+        Correspond à la taille de la fenêtredes visiteurs du site.
+
+    valeurs relatives 
+
+Media queries : 
+
+    permet d'appliquer différentes propriétés ou même différentes valeurs d'une même propriétés à des éléments html selon la taille de l'écran du visiteur et le type de média utilisé
+    @media  screen and ( max-width : 780px)
+
+
+
+
+
+
+
+
+
+
+
+*/
